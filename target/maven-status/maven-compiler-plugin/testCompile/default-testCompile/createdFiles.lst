@@ -1,0 +1,7 @@
+pageObjects\HomePage.class
+pageObjects\MyAccountPage.class
+utilities\ExcelUtility.class
+pageObjects\AccountRegistrationPage.class
+pageObjects\LoginPage.class
+pageObjects\BasePage.class
+utilities\DataProviders.class

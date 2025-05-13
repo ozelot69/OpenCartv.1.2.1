@@ -1,0 +1,66 @@
+2025-04-29 12:37:40 ERROR TC001_AccountRegistrationTest:46 - Test failed...
+2025-04-29 12:37:40 INFO  TC001_AccountRegistrationTest:56 - *****Finished TC001_AccountRegistrationTest*****
+2025-04-29 12:37:44 INFO  TC002_LoginTest:16 - *****Starting TC002_LoginTest*****
+2025-04-29 12:37:44 INFO  TC002_LoginTest:21 - Clicked on MyAccount link
+2025-04-29 12:37:44 INFO  TC002_LoginTest:23 - Clicked in Login link
+2025-04-29 12:37:44 INFO  TC002_LoginTest:25 - Providing credentials
+2025-04-29 12:37:44 INFO  TC002_LoginTest:31 - Validating AccountPage displayed
+2025-04-29 12:37:45 INFO  TC002_LoginTest:52 - *****Finished TC002_LoginTest*****
+2025-04-29 12:40:09 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\ssipl\SeleniumWebDriver_Pavan\OpenCartv.1.2.1\grouping.xml
+
+2025-04-29 12:40:12 INFO  TC001_AccountRegistrationTest:14 - *****Starting TC001_AccountRegistrationTest*****
+2025-04-29 12:40:12 INFO  TC001_AccountRegistrationTest:19 - Clicked on MyAccount link
+2025-04-29 12:40:13 INFO  TC001_AccountRegistrationTest:21 - Clicked on Register link
+2025-04-29 12:40:13 INFO  TC001_AccountRegistrationTest:25 - Providing customer details
+2025-04-29 12:40:19 INFO  TC001_AccountRegistrationTest:40 - Validating expected message...
+2025-04-29 12:40:19 ERROR TC001_AccountRegistrationTest:46 - Test failed...
+2025-04-29 12:40:19 INFO  TC001_AccountRegistrationTest:55 - *****Finished TC001_AccountRegistrationTest*****
+2025-04-29 12:40:22 INFO  TC002_LoginTest:16 - *****Starting TC002_LoginTest*****
+2025-04-29 12:40:22 INFO  TC002_LoginTest:21 - Clicked on MyAccount link
+2025-04-29 12:40:23 INFO  TC002_LoginTest:23 - Clicked in Login link
+2025-04-29 12:40:23 INFO  TC002_LoginTest:25 - Providing credentials
+2025-04-29 12:40:24 INFO  TC002_LoginTest:31 - Validating AccountPage displayed
+2025-04-29 12:40:24 INFO  TC002_LoginTest:52 - *****Finished TC002_LoginTest*****
+2025-04-29 12:41:05 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\ssipl\SeleniumWebDriver_Pavan\OpenCartv.1.2.1\grouping.xml
+
+2025-04-29 12:41:09 INFO  TC001_AccountRegistrationTest:14 - *****Starting TC001_AccountRegistrationTest*****
+2025-04-29 12:41:09 INFO  TC001_AccountRegistrationTest:19 - Clicked on MyAccount link
+2025-04-29 12:41:09 INFO  TC001_AccountRegistrationTest:21 - Clicked on Register link
+2025-04-29 12:41:09 INFO  TC001_AccountRegistrationTest:25 - Providing customer details
+2025-04-29 12:41:16 INFO  TC001_AccountRegistrationTest:40 - Validating expected message...
+2025-04-29 12:41:21 INFO  TC001_AccountRegistrationTest:55 - *****Finished TC001_AccountRegistrationTest*****
+2025-04-29 12:41:24 INFO  TC002_LoginTest:16 - *****Starting TC002_LoginTest*****
+2025-04-29 12:41:24 INFO  TC002_LoginTest:21 - Clicked on MyAccount link
+2025-04-29 12:41:24 INFO  TC002_LoginTest:23 - Clicked in Login link
+2025-04-29 12:41:24 INFO  TC002_LoginTest:25 - Providing credentials
+2025-04-29 12:41:24 INFO  TC002_LoginTest:31 - Validating AccountPage displayed
+2025-04-29 12:41:25 INFO  TC002_LoginTest:52 - *****Finished TC002_LoginTest*****
+2025-04-29 12:46:20 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\ssipl\SeleniumWebDriver_Pavan\OpenCartv.1.2.1\master.xml
+
+2025-04-29 12:46:23 INFO  TC003_LoginDDT:26 - ***** Starting TC003_LoginDDT ***** 
+2025-04-29 12:46:35 INFO  TC003_LoginDDT:63 - ***** Finished TC003_LoginDDT ***** 
+2025-04-29 12:46:35 INFO  TC003_LoginDDT:26 - ***** Starting TC003_LoginDDT ***** 
+2025-04-29 12:46:40 INFO  TC003_LoginDDT:63 - ***** Finished TC003_LoginDDT ***** 
+2025-04-29 12:46:40 INFO  TC003_LoginDDT:26 - ***** Starting TC003_LoginDDT ***** 
+2025-04-29 12:46:45 INFO  TC003_LoginDDT:63 - ***** Finished TC003_LoginDDT ***** 
+2025-04-29 12:46:45 INFO  TC003_LoginDDT:26 - ***** Starting TC003_LoginDDT ***** 
+2025-04-29 12:46:55 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\ssipl\SeleniumWebDriver_Pavan\OpenCartv.1.2.1\grouping.xml
+
+2025-04-29 12:46:58 INFO  TC001_AccountRegistrationTest:14 - *****Starting TC001_AccountRegistrationTest*****
+2025-04-29 12:46:58 INFO  TC001_AccountRegistrationTest:19 - Clicked on MyAccount link
+2025-04-29 12:46:59 INFO  TC001_AccountRegistrationTest:21 - Clicked on Register link
+2025-04-29 12:46:59 INFO  TC001_AccountRegistrationTest:25 - Providing customer details
+2025-04-29 12:46:59 INFO  TC001_AccountRegistrationTest:38 - Validating expected message...
+2025-04-29 12:47:00 INFO  TC001_AccountRegistrationTest:42 - Test passed
+2025-04-29 12:47:00 INFO  TC001_AccountRegistrationTest:53 - *****Finished TC001_AccountRegistrationTest*****
+2025-04-29 12:47:03 INFO  TC002_LoginTest:16 - *****Starting TC002_LoginTest*****
+2025-04-29 12:47:03 INFO  TC002_LoginTest:21 - Clicked on MyAccount link
+2025-04-29 12:47:03 INFO  TC002_LoginTest:23 - Clicked in Login link
+2025-04-29 12:47:03 INFO  TC002_LoginTest:25 - Providing credentials
+2025-04-29 12:47:04 INFO  TC002_LoginTest:31 - Validating AccountPage displayed
+2025-04-29 12:47:04 INFO  TC002_LoginTest:38 - Test passed
+2025-04-29 12:47:04 INFO  TC002_LoginTest:53 - *****Finished TC002_LoginTest*****

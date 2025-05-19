@@ -18,8 +18,14 @@
 			<!--class name="testCases.TC005_Registration_VerifyEmailWarningMsg" />-->
 			<!--class name="testCases.TC006_Registration_YesSelected" />-->
 			<!--class name="testCases.TC007_Login_NoCredentials" />-->
-			<class name="testCases.TC008_Logout" />
+			<!--class name="testCases.TC008_Logout" />-->
 			<!--class name="testCases.TC009_Login_ForgotPassword" />-->
+			<!--class name="testCases.TC010_Search_ExistingProductName" />-->
+			<!--class name="testCases.TC011_SearchDDT" />-->
+			<!--class name="testCases.TC012_Search_MultipleProducts" />-->
+			<!--class name="testCases.TC013_ProductCompareNumber" />-->
+			<!--class name="testCases.TC014_ProductCompareNameDDT" />-->
+			<class name="testCases.TC015_ProductCompareNumberDDT" />
 
 		</classes>
 	</test> <!--

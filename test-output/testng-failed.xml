@@ -8,13 +8,13 @@
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC004_Registration_VerifyPwdConfirmMsg">
+      <class name="testCases.TC015_ProductCompareNumberDDT">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyPwdConfirmMsg"/>
+          <include name="verifyProductCompareNumberDDT" invocation-numbers="1"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TC004_Registration_VerifyPwdConfirmMsg -->
+      </class> <!-- testCases.TC015_ProductCompareNumberDDT -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Master Suite] -->

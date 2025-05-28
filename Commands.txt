@@ -21,3 +21,17 @@ To Run pom.xml in Command Prompt
 cd C:\Users\ssipl\SeleniumWebDriver_Pavan\OpenCartv.1.2.1
 mvn test
 
+
+To run project from Git 
+------------------------
+Go to your project directory and open git command prompt 
+C:\Users\ssipl\SeleniumWebDriver_Pavan\OpenCartv.1.2.1
+ 1) git add -A
+ 2) git commit -m "commit msg"
+ 3) git push origin master
+ 
+1) Go to file location and open cmd
+C:\Disk D\Study\Selenium\Installed
+2) Open cmd and run the command 
+java -jar jenkins.war --enable-future-java
+3) Open http://localhost:8080/  - Jenkins URL 

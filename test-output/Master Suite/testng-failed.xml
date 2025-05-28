@@ -8,13 +8,13 @@
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC015_ProductCompareNumberDDT">
+      <class name="testCases.TC017_EndToEnd">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyProductCompareNumberDDT" invocation-numbers="1"/>
           <include name="setup"/>
+          <include name="endToEndTest"/>
         </methods>
-      </class> <!-- testCases.TC015_ProductCompareNumberDDT -->
+      </class> <!-- testCases.TC017_EndToEnd -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Master Suite] -->

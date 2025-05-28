@@ -11,36 +11,48 @@ import testBase.BaseClass;
 import utilities.DataProviders;
 import utilities.ExcelUtility;
 
-public class TC012_Search_MultipleProducts extends BaseClass  {
+public class TC012_Search_MultipleProducts extends BaseClass {
 
 	/*
-	 * Data is valid - login success - test pass - logout
-	 * Data is valid - login failed - test fail
+	 * Data is valid - login success - test pass - logout Data is valid - login
+	 * failed - test fail
 	 * 
-	 * Data is invalid - login success - test fail - logout 
-	 * Data is invalid - login failed - test pass
+	 * Data is invalid - login success - test fail - logout Data is invalid - login
+	 * failed - test pass
 	 */
-		
-	@Test(groups= "Master")
+
+	@Test(groups = "Master")
 	public void verifySearchMultipleProducts() throws InterruptedException {
 
 		logger.info("***** Starting TC012_Search_MultipleProducts ***** ");
 
 		try {
 			HomePage hp = new HomePage(driver);
-			hp.setSearch(p.getProperty("searchMultipleProducts")); 
+			String productName = p.getProperty("searchMultipleProducts");
+			hp.setSearch(productName);
 			logger.info("Product name provided");
 			hp.clickSearch();
-			logger.info("Search button clicked");
+			logger.info("Search button clicked");			
 
-			logger.info("Validating multiple products displayed...");
+//			String actNumberOfProducts = sp.numberOfProducts();
+//			String expNumberOfProducts = p.getProperty("searchNumberOfProducts");
+//			
+//			Assert.assertEquals(actNumberOfProducts, expNumberOfProducts, "Number of products not correct");
+//			logger.info("Test passed");	
+
+			logger.info("Validating correct products displayed...");
 			SearchPage sp = new SearchPage(driver);
-			//boolean msgDisplayed = sp.IsNoProductMsgDisplayed();
-			String actNumberOfProducts = sp.numberOfProducts();
-			String expNumberOfProducts = p.getProperty("searchNumberOfProducts");
+			boolean flag = sp.areMultProdDisplayed(productName);
+
+			Assert.assertEquals(flag, true, "Products are not displayed");
+			//logger.info("Test passed");
 			
-			Assert.assertEquals(actNumberOfProducts, expNumberOfProducts, "Number of products not correct");
-			logger.info("Test passed");			
+			logger.info("Validating number of products displayed...");
+			int expNumberOfProducts = Integer.parseInt(p.getProperty("searchNumberOfProducts"));
+			boolean flag2 = sp.numberOfProductsCorrect(expNumberOfProducts);
+
+			Assert.assertEquals(flag2, true, "Number of products not correct");
+			logger.info("Test passed");
 
 		} catch (Exception e) {
 			logger.error("Test failed...");

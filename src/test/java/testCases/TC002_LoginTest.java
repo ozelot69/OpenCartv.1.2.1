@@ -28,6 +28,8 @@ public class TC002_LoginTest extends BaseClass {
 			lp.setPassword(p.getProperty("password"));
 			lp.clickLogin();
 			
+			Thread.sleep(3000);
+			
 			logger.info("Validating AccountPage displayed"); 
 			MyAccountPage macp = new MyAccountPage(driver);			
 			boolean targetPage = macp.isMyAccountPageExist();

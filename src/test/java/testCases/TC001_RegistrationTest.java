@@ -12,7 +12,7 @@ public class TC001_RegistrationTest extends BaseClass {
 	@Test(groups = {"Regression", "Master"})
 	public void verifyAccountRegistration() {
 
-		logger.info("*****Starting TC001_AccountRegistrationTest*****");
+		logger.info("***** Starting TC001_AccountRegistrationTest *****");
 
 		try {
 			HomePage hp = new HomePage(driver);

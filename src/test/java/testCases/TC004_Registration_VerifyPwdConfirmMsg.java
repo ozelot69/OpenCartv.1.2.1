@@ -50,7 +50,7 @@ public class TC004_Registration_VerifyPwdConfirmMsg extends BaseClass {
 			}
 
 			// v.2
-//			Assert.assertEquals(passwordConfirmMsg, "Password confirmation does not match password!", "Password Confirmation message mismatch"); // actual and expected results																								
+//			Assert.assertEquals(actPswConfirmMsg, p.getProperty("expPswConfirmMsg"), "Password Confirmation message mismatch"); // actual and expected results																								
 //			logger.info("Test passed");
 
 		} catch (Exception e) {

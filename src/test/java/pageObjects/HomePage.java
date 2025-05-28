@@ -21,11 +21,17 @@ public class HomePage extends BasePage {
 	@FindBy(xpath = "//a[normalize-space()='Login']")
 	WebElement lnkLogin; 
 	
+//	@FindBy(linkText = "Login")   // Login link added in step5
+//	WebElement lnkLogin;
+	
 	@FindBy(xpath = "//input[@placeholder='Search']")
 	WebElement txtSearch; 
 	
-	@FindBy(xpath = "//button[@class='btn btn-default btn-lg']")
-	WebElement btnSearch; 
+//	@FindBy(xpath = "//button[@class='btn btn-default btn-lg']")
+//	WebElement btnSearch; 
+	
+	@FindBy(xpath="//div[@id='search']//button[@type='button']") //For Search Product Test
+	WebElement btnSearch;
 	
 	@FindBy(xpath = "//a[text()='Cameras']")
 	WebElement lnkCameras;

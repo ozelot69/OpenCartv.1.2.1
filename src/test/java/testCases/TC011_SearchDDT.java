@@ -35,7 +35,7 @@ public class TC011_SearchDDT extends BaseClass  {
 
 			logger.info("Validating product displayed...");
 			SearchPage sp = new SearchPage(driver);
-			boolean msgDisplayed = sp.IsNoProductMsgDisplayed();
+			boolean msgDisplayed = sp.isNoProductMsgDisplayed();
 			
 			if(expResult.equalsIgnoreCase("yes")) {
 				if(msgDisplayed==true) {					
@@ -58,13 +58,13 @@ public class TC011_SearchDDT extends BaseClass  {
 			}
 			//Thread.sleep(3000);
 				
-			//Assert.assertTrue(productDisplayed);
-//			Assert.assertEquals(productDisplayed, true, "Product is not displayed");
+			//Assert.assertTrue(msgDisplayed);
+//			Assert.assertEquals(msgDisplayed, true, "Product is not displayed");
 //			logger.info("Test passed");
 
 		} catch (Exception e) {
-			logger.error("Test failed...");
-			Assert.fail();
+			logger.error("Test failed..." + e.getMessage());
+			Assert.fail("Test failed: " + e.getMessage());
 		} finally {
 			logger.info("***** Finished TC011_SearchDDT *****");
 		}

@@ -23,20 +23,19 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
-//import io.github.bonigarcia.wdm.WebDriverManager;
-
 import org.apache.logging.log4j.LogManager; //Log4j
 import org.apache.logging.log4j.Logger; //Log4j
 
 public class BaseClass {
 
-	public static WebDriver driver; //will use the same driver
+//public static WebDriver driver; //for capture screenshot make it static otherwise remove static
+	public static WebDriver driver;
 	public Logger logger; // Log4j
 	public Properties p;
 
 	@BeforeClass(groups = { "Sanity", "Regression", "Master" })
 	@Parameters({ "os", "browser" })
-	public void setup(String os, String br) throws IOException, InterruptedException {		
+	public void setup(String os, String br) throws IOException {
 		// Loading config.properties file
 		FileReader file = new FileReader("./src//test//resources//config.properties");
 		p = new Properties();
@@ -44,7 +43,7 @@ public class BaseClass {
 
 		logger = LogManager.getLogger(this.getClass()); // lOG4J2
 
-		if (p.getProperty("execution_env").equalsIgnoreCase("remote")) {			
+		if (p.getProperty("execution_env").equalsIgnoreCase("remote")) {
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 
 			// os
@@ -52,6 +51,7 @@ public class BaseClass {
 				capabilities.setPlatform(Platform.WIN11);
 			} else if (os.equalsIgnoreCase("linux")) {
 				capabilities.setPlatform(Platform.LINUX);
+
 			} else if (os.equalsIgnoreCase("mac")) {
 				capabilities.setPlatform(Platform.MAC);
 			} else {
@@ -92,7 +92,7 @@ public class BaseClass {
 				break;
 			default:
 				System.out.println("Invalid browser name..");
-				return; //it will exit from entire method and stop execution 
+				return;
 			}
 		}
 
@@ -101,7 +101,6 @@ public class BaseClass {
 
 		driver.get(p.getProperty("appURL")); // reading url from properties file.
 		driver.manage().window().maximize();
-		Thread.sleep(5000);
 	}
 
 	@AfterClass(groups = { "Sanity", "Regression", "Master" })
@@ -122,25 +121,23 @@ public class BaseClass {
 	public String randomeAlphaNumberic() {
 		String generatedstring = RandomStringUtils.randomAlphabetic(3);
 		String generatednumber = RandomStringUtils.randomNumeric(3);
-		return (generatedstring + "@!%" + generatednumber);
+		return (generatedstring + "@" + generatednumber);
 	}
 
 	public String captureScreen(String tname) throws IOException {
 
-		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 
 		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
-		
-		//calling getScreenshotAs method from TakesScreenshot interface 
-		File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE); 
+		File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
 
-		//specify the pass where to store the file 
 		String targetFilePath = System.getProperty("user.dir") + "\\screenshots\\" + tname + "_" + timeStamp + ".png";
 		File targetFile = new File(targetFilePath);
-		
-		//copy file to the location
+
 		sourceFile.renameTo(targetFile);
 
 		return targetFilePath;
+
 	}
+
 }

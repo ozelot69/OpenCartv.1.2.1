@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-19T18:36:22 ADT" name="Master Suite" finished-at="2025-05-19T18:36:53 ADT" duration-ms="30950">
+  <suite started-at="2025-05-24T16:43:14 ADT" name="Suite" finished-at="2025-05-24T16:43:43 ADT" duration-ms="28289">
     <groups>
-      <group name="DataDriven">
-        <method signature="TC015_ProductCompareNumberDDT.verifyProductCompareNumberDDT(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC015_ProductCompareNumberDDT@27eedb64]" name="verifyProductCompareNumberDDT" class="testCases.TC015_ProductCompareNumberDDT"/>
-      </group> <!-- DataDriven -->
+      <group name="Master">
+        <method signature="TC001_RegistrationTest.verifyAccountRegistration()[pri:0, instance:testCases.TC001_RegistrationTest@27eedb64]" name="verifyAccountRegistration" class="testCases.TC001_RegistrationTest"/>
+        <method signature="TC001_RegistrationTest.verifyAccountRegistration()[pri:0, instance:testCases.TC001_RegistrationTest@4ed5eb72]" name="verifyAccountRegistration" class="testCases.TC001_RegistrationTest"/>
+        <method signature="TC001_RegistrationTest.verifyAccountRegistration()[pri:0, instance:testCases.TC001_RegistrationTest@19b93fa8]" name="verifyAccountRegistration" class="testCases.TC001_RegistrationTest"/>
+      </group> <!-- Master -->
+      <group name="Regression">
+        <method signature="TC001_RegistrationTest.verifyAccountRegistration()[pri:0, instance:testCases.TC001_RegistrationTest@27eedb64]" name="verifyAccountRegistration" class="testCases.TC001_RegistrationTest"/>
+        <method signature="TC001_RegistrationTest.verifyAccountRegistration()[pri:0, instance:testCases.TC001_RegistrationTest@4ed5eb72]" name="verifyAccountRegistration" class="testCases.TC001_RegistrationTest"/>
+        <method signature="TC001_RegistrationTest.verifyAccountRegistration()[pri:0, instance:testCases.TC001_RegistrationTest@19b93fa8]" name="verifyAccountRegistration" class="testCases.TC001_RegistrationTest"/>
+      </group> <!-- Regression -->
     </groups>
-    <test started-at="2025-05-19T18:36:22 ADT" name="Test" finished-at="2025-05-19T18:36:53 ADT" duration-ms="30950">
-      <class name="testCases.TC015_ProductCompareNumberDDT">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC015_ProductCompareNumberDDT@27eedb64]" started-at="2025-05-19T18:36:22 ADT" name="setup" finished-at="2025-05-19T18:36:30 ADT" duration-ms="8394" status="PASS">
+    <test started-at="2025-05-24T16:43:14 ADT" name="chromeTest" finished-at="2025-05-24T16:43:22 ADT" duration-ms="7846">
+      <class name="testCases.TC001_RegistrationTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_RegistrationTest@27eedb64]" started-at="2025-05-24T16:43:15 ADT" name="setup" finished-at="2025-05-24T16:43:19 ADT" duration-ms="3959" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,75 +33,71 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyProductCompareNumberDDT(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC015_ProductCompareNumberDDT@27eedb64]" started-at="2025-05-19T18:36:31 ADT" name="verifyProductCompareNumberDDT" data-provider="CompareProductNumber" finished-at="2025-05-19T18:36:36 ADT" duration-ms="5505" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[HTC Touch HD]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifyAccountRegistration()[pri:0, instance:testCases.TC001_RegistrationTest@27eedb64]" started-at="2025-05-24T16:43:19 ADT" name="verifyAccountRegistration" finished-at="2025-05-24T16:43:22 ADT" duration-ms="3328" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyProductCompareNumberDDT -->
-        <test-method signature="verifyProductCompareNumberDDT(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC015_ProductCompareNumberDDT@27eedb64]" started-at="2025-05-19T18:36:36 ADT" name="verifyProductCompareNumberDDT" data-provider="CompareProductNumber" finished-at="2025-05-19T18:36:42 ADT" duration-ms="5455" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[iPhone]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductCompareNumberDDT -->
-        <test-method signature="verifyProductCompareNumberDDT(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC015_ProductCompareNumberDDT@27eedb64]" started-at="2025-05-19T18:36:42 ADT" name="verifyProductCompareNumberDDT" data-provider="CompareProductNumber" finished-at="2025-05-19T18:36:47 ADT" duration-ms="5397" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[iPod Classic]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductCompareNumberDDT -->
-        <test-method signature="verifyProductCompareNumberDDT(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC015_ProductCompareNumberDDT@27eedb64]" started-at="2025-05-19T18:36:47 ADT" name="verifyProductCompareNumberDDT" data-provider="CompareProductNumber" finished-at="2025-05-19T18:36:52 ADT" duration-ms="5441" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Palm Treo Pro]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductCompareNumberDDT -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC015_ProductCompareNumberDDT@27eedb64]" started-at="2025-05-19T18:36:52 ADT" name="tearDown" finished-at="2025-05-19T18:36:53 ADT" duration-ms="172" status="PASS">
+        </test-method> <!-- verifyAccountRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001_RegistrationTest@27eedb64]" started-at="2025-05-24T16:43:22 ADT" name="tearDown" finished-at="2025-05-24T16:43:22 ADT" duration-ms="278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC015_ProductCompareNumberDDT -->
-    </test> <!-- Test -->
-  </suite> <!-- Master Suite -->
+      </class> <!-- testCases.TC001_RegistrationTest -->
+    </test> <!-- chromeTest -->
+    <test started-at="2025-05-24T16:43:24 ADT" name="FirefoxTest" finished-at="2025-05-24T16:43:33 ADT" duration-ms="9397">
+      <class name="testCases.TC001_RegistrationTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_RegistrationTest@4ed5eb72]" started-at="2025-05-24T16:43:24 ADT" name="setup" finished-at="2025-05-24T16:43:29 ADT" duration-ms="5522" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAccountRegistration()[pri:0, instance:testCases.TC001_RegistrationTest@4ed5eb72]" started-at="2025-05-24T16:43:29 ADT" name="verifyAccountRegistration" finished-at="2025-05-24T16:43:32 ADT" duration-ms="2644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccountRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001_RegistrationTest@4ed5eb72]" started-at="2025-05-24T16:43:32 ADT" name="tearDown" finished-at="2025-05-24T16:43:33 ADT" duration-ms="1229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC001_RegistrationTest -->
+    </test> <!-- FirefoxTest -->
+    <test started-at="2025-05-24T16:43:33 ADT" name="edgeTest" finished-at="2025-05-24T16:43:43 ADT" duration-ms="9560">
+      <class name="testCases.TC001_RegistrationTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_RegistrationTest@19b93fa8]" started-at="2025-05-24T16:43:33 ADT" name="setup" finished-at="2025-05-24T16:43:38 ADT" duration-ms="5082" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAccountRegistration()[pri:0, instance:testCases.TC001_RegistrationTest@19b93fa8]" started-at="2025-05-24T16:43:38 ADT" name="verifyAccountRegistration" finished-at="2025-05-24T16:43:41 ADT" duration-ms="3158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccountRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001_RegistrationTest@19b93fa8]" started-at="2025-05-24T16:43:41 ADT" name="tearDown" finished-at="2025-05-24T16:43:43 ADT" duration-ms="1313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC001_RegistrationTest -->
+    </test> <!-- edgeTest -->
+  </suite> <!-- Suite -->
 </testng-results>

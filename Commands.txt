@@ -1,0 +1,23 @@
+To Run Standalone grid
+----------------------
+cd C:\Users\ssipl\SeleniumWebDriver_Pavan\OpenCartv.1.2.1
+java -jar selenium-server-4.31.0.jar standalone
+
+
+To Start Grid on Docker
+----------------------
+cd C:\Users\ssipl\SeleniumWebDriver_Pavan\OpenCartv.1.2.1
+docker-compose up
+
+
+To Remove Containers on Docker
+------------------------------
+cd C:\Users\ssipl\SeleniumWebDriver_Pavan\OpenCartv.1.2.1
+docker-compose down
+
+
+To Run pom.xml in Command Prompt
+-------------------
+cd C:\Users\ssipl\SeleniumWebDriver_Pavan\OpenCartv.1.2.1
+mvn test
+

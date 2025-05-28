@@ -16,23 +16,24 @@ public class TC010_Search_ExistingProductName extends BaseClass {
 
 		try {
 			HomePage hp = new HomePage(driver);
-			hp.setSearch(p.getProperty("searchProductName"));
+			String productName = p.getProperty("searchProductName");
+			hp.setSearch(productName);
 			logger.info("Product name provided");
 			hp.clickSearch();
 			logger.info("Search button clicked");
 
 			logger.info("Validating product displayed...");
-			SearchPage sp = new SearchPage(driver);
-			boolean productDisplayed = sp.IsProductDisplayed();
-
+			SearchPage sp = new SearchPage(driver);			
+			boolean flag = sp.isProductDisplayed(productName);			
 			
-			//Assert.assertTrue(productDisplayed);
-			Assert.assertEquals(productDisplayed, true, "Product is not displayed");
+			Assert.assertEquals(flag, true, "Product is not displayed");
 			logger.info("Test passed");
+			
+			//Assert.assertTrue(actResult);
 
 		} catch (Exception e) {
-			logger.error("Test failed...");
-			Assert.fail();
+			logger.error("Test failed..." + e.getMessage());
+			Assert.fail("Test failed: " + e.getMessage());
 		} finally {
 			logger.info("***** Finished TC010_Search_ExistingProductName *****");
 		}

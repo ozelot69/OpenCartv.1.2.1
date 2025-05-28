@@ -24,7 +24,7 @@
 
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>grid_standalone.xml</suiteXmlFile>
+							<suiteXmlFile>master.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 

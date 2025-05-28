@@ -35,3 +35,4 @@ C:\Disk D\Study\Selenium\Installed
 2) Open cmd and run the command 
 java -jar jenkins.war --enable-future-java
 3) Open http://localhost:8080/  - Jenkins URL 
+start 

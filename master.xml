@@ -26,8 +26,8 @@
 			<!--class name="testCases.TC013_ProductCompareNumber" />-->
 			<!--class name="testCases.TC014_ProductCompareNameDDT" />-->
 			<!--class name="testCases.TC015_ProductCompareNumberDDT" />-->
-			<!--class name="testCases.TC016_AddToCart" />-->
-			<class name="testCases.TC017_EndToEnd" />
+			<class name="testCases.TC016_AddToCart" />
+			<!--class name="testCases.TC017_EndToEnd" />-->
 
 		</classes>
 	</test> <!--
